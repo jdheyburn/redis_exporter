@@ -387,7 +387,7 @@ func NewRedisExporter(redisURI string, opts Options) (*Exporter, error) {
 		"sentinel_master_status":                          {txt: "Master status on Sentinel", lbls: []string{"master_name", "master_address", "master_status"}},
 		"sentinel_master_ckquorum_status":                 {txt: "Master ckquorum status", lbls: []string{"master_name", "message"}},
 		"sentinel_masters":                                {txt: "The number of masters this sentinel is watching"},
-		"sentinel_master_setting_ckquorum":                {txt: "Show the current ckquorum config for each master", lbls: []string{"master_name", "master_address"}},
+		"sentinel_master_setting_quorum":                  {txt: "Show the current ckquorum config for each master", lbls: []string{"master_name", "master_address"}},
 		"sentinel_master_setting_failover_timeout":        {txt: "Show the current failover-timeout config for each master", lbls: []string{"master_name", "master_address"}},
 		"sentinel_master_setting_parallel_syncs":          {txt: "Show the current parallel-syncs config for each master", lbls: []string{"master_name", "master_address"}},
 		"sentinel_master_setting_down_after_milliseconds": {txt: "Show the current down-after-milliseconds config for each master", lbls: []string{"master_name", "master_address"}},

@@ -177,7 +177,7 @@ func TestExtractSentinelMetricsForSentinel(t *testing.T) {
 		"sentinel_master_ok_sentinels":                    false,
 		"sentinel_master_ok_slaves":                       false,
 		"sentinel_master_ckquorum_status":                 false,
-		"sentinel_master_setting_ckquorum":                false,
+		"sentinel_master_setting_quorum":                  false,
 		"sentinel_master_setting_failover_timeout":        false,
 		"sentinel_master_setting_parallel_syncs":          false,
 		"sentinel_master_setting_down_after_milliseconds": false,
